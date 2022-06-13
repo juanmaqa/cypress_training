@@ -1,7 +1,7 @@
-# turn-qa
-## Juan Manuel Perez Garate juanperezgarate@gmail.com
+# Cypress training
+## Juan Manuel Perez Garate
 
-### This test automation suite was created using Cypress with javascript, and also in order to complete the Turn QA Home Task.
+### This test automation suite was created using Cypress with javascript.
 ### You only need to clone the project preferably using Visual Studio Code and follow the next steps:
 
 #### Open the file fixtures/candidate.json and edit the values, these values are the candidate´s information.
