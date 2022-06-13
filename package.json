@@ -1,0 +1,34 @@
+{
+  "name": "turn-test",
+  "version": "1.0.0",
+  "description": "test to pass interview process",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run cy:run || npm run posttest && npm run launchReport",
+    "cy:run": "cypress run --env allure=true --headed",
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "posttest": "npm run allure:report",
+    "launchReport": "allure serve",
+    "allure:clear_report":" (if exist allure-report (rmdir /S /Q allure-report))",
+    "precy-run": "yarn run allure:clear_results && yarn run allure:clear_report",
+    "postcy-run": "yarn run allure:report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmpg22/turn-qa.git"
+  },
+  "author": "juanperezgarate@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmpg22/turn-qa/issues"
+  },
+  "homepage": "https://github.com/jmpg22/turn-qa#readme",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.26.5",
+    "cypress": "^9.6.1",
+    "cypress-downloadfile": "^1.2.2"
+  },
+  "dependencies": {
+    "cypress-file-upload": "^5.0.8"
+  }
+}
